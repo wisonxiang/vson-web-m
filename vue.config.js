@@ -3,7 +3,7 @@ module.exports = {
     assetsDir: 'mstatic',
     publicPath: process.env.NODE_ENV === 'production' ? '//cdn.vson.top' : '/',
     productionSourceMap: false,
-
+    
     css: {
         loaderOptions: {
             postcss: {

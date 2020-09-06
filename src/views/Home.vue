@@ -1,22 +1,25 @@
 <template>
-  <div class="home">
-      <van-button type="warning" class="btn">警告按钮</van-button>
-  </div>
+    <div class="home">
+        <van-image round width="300" height="300" fit="cover" :src="require('../assets/song.jpg')" class="img" />
+        <screen-locker></screen-locker>
+    </div>
 </template>
 
 <script>
-import { Button } from 'vant';
+import { Image } from "vant";
+import screenLocker from "@/components/screen-locker.vue";
 export default {
   name: "Home",
   components: {
-    [Button.name]: Button,
-  }
+    [Image.name]: Image,
+    screenLocker,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.btn{
-    width: 375px;
+.img {
+  margin-top: 300px;
 }
 </style>
 
